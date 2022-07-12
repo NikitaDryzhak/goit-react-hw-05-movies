@@ -31,7 +31,8 @@ export async function getMovieReview(movieId) {
 
 export async function getMoviesBySearchForm(movieName) {
   const response = await axios.get(
-    `${URL}search/movie/?api_key=${API_KEY}&query=${movieName}`
+    `https://api.themoviedb.org/3/search/movie/?api_key=${API_KEY}&query=${movieName}&page=1`
   );
+
   return response;
 }

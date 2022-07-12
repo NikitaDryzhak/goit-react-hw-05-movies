@@ -1,0 +1,61 @@
+.movieImg {
+  width: 280px;
+}
+
+.movieCard {
+  width: auto;
+  height: 420px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+}
+
+.movieInfo {
+  margin-left: 20px;
+}
+
+.itemGenres {
+  list-style: none;
+  margin-right: 5px;
+}
+
+.listGenres {
+  padding: 0;
+  display: flex;
+}
+.btn {
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.link {
+  color: black;
+  margin: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.active {
+  color: blue;
+  margin: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.linkSection {
+  margin-left: 50px;
+}
+
+.linkList {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+h3 {
+  font-size: 20px;
+}

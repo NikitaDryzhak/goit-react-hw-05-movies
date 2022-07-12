@@ -1,0 +1,20 @@
+.listReview {
+  list-style: none;
+  border: 1px solid black;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.name {
+  font-size: 16px;
+}
+
+.content {
+  transition: 200ms;
+}
+.content:hover {
+  transition: 200ms;
+  transform: scale(1.07);
+}

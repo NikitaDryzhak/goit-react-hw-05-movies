@@ -16,20 +16,18 @@ export default function Cast() {
       {cast && (
         <ul className={s.listCast}>
           {cast.map(({ id, name, profile_path, character }) => {
-            if (profile_path) {
-              return (
-                <li className={s.itemCast} key={id}>
-                  <img
-                    src={'https://image.tmdb.org/t/p/w500' + profile_path}
-                    alt={name}
-                    className={s.img}
-                  />
-                  <h5 className={s.name}>{name}</h5>
-                  <p className={s.character}>Character: {character}</p>
-                </li>
-              );
-            }
-          })}{' '}
+            return (
+              <li className={s.itemCast} key={id}>
+                <img
+                  src={'https://image.tmdb.org/t/p/w500' + profile_path}
+                  alt={name}
+                  className={s.img}
+                />
+                <h5 className={s.name}>{name}</h5>
+                <p className={s.character}>Character: {character}</p>
+              </li>
+            );
+          })}
         </ul>
       )}
     </div>

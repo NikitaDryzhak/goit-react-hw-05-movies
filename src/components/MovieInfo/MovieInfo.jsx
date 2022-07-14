@@ -62,13 +62,15 @@ export default function MovieInfo() {
       <div className={s.linkSection}>
         <h3>Additional information</h3>
         <NavLink
-          to="cast"
+          to={`/movies/${movieId}/cast`}
+          state={location.state}
           className={navData => (navData.isActive ? s.active : s.link)}
         >
           Cast
         </NavLink>
         <NavLink
-          to="reviews"
+          to={`/movies/${movieId}/reviews`}
+          state={location.state}
           className={navData => (navData.isActive ? s.active : s.link)}
         >
           Reviews
